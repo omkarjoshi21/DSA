@@ -59,6 +59,7 @@ class BST:
                 if temp.right:
                     arr.append(temp.right)
             level+=1
+        print("\n Height of the tree: ", level-1)
 
 b1 = BST()
 b1.insert(Node(100))
@@ -74,5 +75,5 @@ b1.insert(Node(70))
 print("\nInorder: ")
 b1.inorder(b1.root)
 
-print("\nLevel Order: ")
+print("\nLevel Order Traversal : ")
 b1.level_order(b1.root)
